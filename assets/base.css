@@ -1,0 +1,11 @@
+a {
+  @apply text-green-500 transition duration-150 ease-in-out;
+
+  &:hover {
+    @apply text-green-900
+  }
+
+  &:focus {
+    @apply outline-none text-green-700;
+  }
+}
