@@ -100,10 +100,11 @@
         method="POST"
         on:submit|preventDefault={handleRegistration}
         netlify-honeypot="last-name"
-        data-netlify="true">
+        netlify>
         <input
           aria-label="Email address"
           type="email"
+          name="email"
           required
           class="appearance-none w-full px-5 py-3 border border-transparent
           text-base leading-6 rounded-md text-gray-900 bg-white
@@ -139,3 +140,7 @@
     </div>
   </div>
 {/if}
+<form name="newsletter" method="POST" netlify-honeypot="last-name" netlify hidden>
+  <input type="email" name="email" />
+  <input name="last-name" />
+</form>
