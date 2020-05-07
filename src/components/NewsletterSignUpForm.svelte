@@ -98,8 +98,6 @@
         class="sm:flex"
         name="newsletter"
         method="POST"
-        action="/?registered=true"
-        
         netlify-honeypot="last-name"
         netlify>
         <input
