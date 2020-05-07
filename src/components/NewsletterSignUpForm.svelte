@@ -101,6 +101,7 @@
         on:submit|preventDefault={handleRegistration}
         netlify-honeypot="last-name"
         netlify>
+        <input type="hidden" name="form-name" value="newsletter" />
         <input
           aria-label="Email address"
           type="email"
