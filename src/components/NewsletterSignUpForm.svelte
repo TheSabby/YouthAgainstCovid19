@@ -100,7 +100,7 @@
         method="POST"
         on:submit|preventDefault={handleRegistration}
         netlify-honeypot="last-name"
-        netlify>
+        data-netlify="true">
         <input
           aria-label="Email address"
           type="email"
