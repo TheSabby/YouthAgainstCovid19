@@ -7,7 +7,7 @@
   <title>#YouthAgainstCovid19</title>
 </svelte:head>
 
-<NewsletterSignUpForm />
+<!-- <NewsletterSignUpForm /> -->
 
 <svg class="h-80 w-80 text-yellow-400 m-auto" fill="currentColor" viewBox="0 0 20 20">
   <path
