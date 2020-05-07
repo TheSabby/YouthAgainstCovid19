@@ -19,7 +19,7 @@
       <div class="flex">
         <div class="flex-shrink-0 flex items-center">
           <!-- <img class="block h-8 w-auto" src="/logo.svg" alt="Tibu logo" /> -->
-          <h1 class="text-xl text-center font-bold">#YouthAgainstCovid19</h1>
+          <h1 class="text-xl text-center font-bold">#<span class="text-green-600">Youth</span>Against<span class="text-red-600">Covid19</span></h1>
         </div>
         <div class="hidden sm:ml-6 sm:flex">
           {#each navItems as item, i (item.href)}
@@ -117,7 +117,7 @@
         </div> -->
       </div>
       <div class="-mr-2 flex items-center sm:hidden">
-        <button
+        <!-- <button
           on:click={() => (open = !open)}
           class="inline-flex items-center justify-center p-2 rounded-md
           text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none
@@ -144,7 +144,7 @@
                 d="M4 6h16M4 12h16M4 18h16" />
             {/if}
           </svg>
-        </button>
+        </button> -->
       </div>
     </div>
   </div>
