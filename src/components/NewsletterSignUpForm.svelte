@@ -98,6 +98,7 @@
         class="sm:flex"
         name="newsletter"
         method="POST"
+        action="/?registered=true"
         on:submit|preventDefault={handleRegistration}
         netlify-honeypot="last-name"
         netlify>
@@ -140,7 +141,3 @@
     </div>
   </div>
 {/if}
-<form name="newsletter" method="POST" netlify-honeypot="last-name" netlify hidden>
-  <input type="email" name="email" />
-  <input name="last-name" />
-</form>
