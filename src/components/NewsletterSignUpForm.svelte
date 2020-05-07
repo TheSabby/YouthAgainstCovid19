@@ -13,7 +13,6 @@
 
   function handleRegistration(e) {
     submitting = true;
-    isRegistered = true;
     const formData = new FormData(form);
     fetch(form.getAttribute("action"), {
       method: "POST"
