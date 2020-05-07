@@ -98,7 +98,6 @@
         class="sm:flex"
         name="newsletter"
         method="POST"
-        on:submit|preventDefault={handleRegistration}
         netlify-honeypot="last-name"
         netlify>
         <input type="hidden" name="form-name" value="newsletter" />
