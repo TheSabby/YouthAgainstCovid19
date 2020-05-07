@@ -99,7 +99,7 @@
         name="newsletter"
         method="POST"
         action="/?registered=true"
-        on:submit|preventDefault={handleRegistration}
+        
         netlify-honeypot="last-name"
         netlify>
         <input
