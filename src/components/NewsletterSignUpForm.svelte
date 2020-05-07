@@ -97,7 +97,6 @@
         bind:this={form}
         class="sm:flex"
         name="newsletter"
-        action="/?registered=true"
         method="POST"
         on:submit|preventDefault={handleRegistration}
         netlify-honeypot="last-name"
