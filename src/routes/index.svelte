@@ -5,6 +5,11 @@
 
 <svelte:head>
   <title>#YouthAgainstCovid19</title>
+  <meta
+    name="description"
+    content="#YouthAgainstCovid19 is a collective of African youth who want to
+    make a difference in the continent and have an impact in the fight against
+    the novel coronavirus." />
 </svelte:head>
 
 <h1 class="text-teal-700 text-2xl font-extrabold">#YouthAgainstCovid19</h1>
@@ -25,4 +30,9 @@
   this disease.
 </p>
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSc32DlQ6BTt8GLlP83_xLE02ku0n8RN5ysg7-F1W5-rmgiXLA/viewform?usp=sf_link" rel="noopener noreferrer" target="_blank">Join us.</a>
+<a
+  href="https://docs.google.com/forms/d/e/1FAIpQLSc32DlQ6BTt8GLlP83_xLE02ku0n8RN5ysg7-F1W5-rmgiXLA/viewform?usp=sf_link"
+  rel="noopener noreferrer"
+  target="_blank">
+  Join us.
+</a>
