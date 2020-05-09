@@ -3,13 +3,19 @@ body {
 }
 
 a {
-  @apply text-green-500 transition duration-150 ease-in-out;
+  @apply text-teal-700 transition duration-150 ease-in-out;
 
   &:hover {
-    @apply text-green-900
+    @apply text-teal-900
   }
 
   &:focus {
-    @apply outline-none text-green-700;
+    @apply outline-none text-teal-800;
   }
+}
+
+p {
+  @apply leading-7 mb-4;
+
+  color: #496263;
 }

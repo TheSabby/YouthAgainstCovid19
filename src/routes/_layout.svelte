@@ -7,8 +7,7 @@
   export let segment;
 </script>
 
-<div class="min-h-screen">
-  <Nav {segment} />
+<div class="min-h-screen border-t-8 border-teal-700">
 
   <div class="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8">
     <slot></slot>
