@@ -7,7 +7,7 @@
   <title>#YouthAgainstCovid19</title>
 </svelte:head>
 
-<h1 class="text-teal-700 text-2xl font-bold">#YouthAgainstCovid19</h1>
+<h1 class="text-teal-700 text-2xl font-extrabold">#YouthAgainstCovid19</h1>
 
 <h2 class="font-bold mt-8">Who are we?</h2>
 <p>
