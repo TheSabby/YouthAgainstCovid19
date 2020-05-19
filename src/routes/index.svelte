@@ -6,7 +6,7 @@
   <title>AYACOVID-19</title>
   <meta
     name="description"
-    content="#YouthAgainstCovid19 is a collective of African youth who want to
+    content="African Youth Against COVID-19 is a collective of African youth who want to
     make a difference in the continent and have an impact in the fight against
     the novel coronavirus." />
 </svelte:head>
