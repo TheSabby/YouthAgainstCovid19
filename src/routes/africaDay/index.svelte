@@ -8,7 +8,7 @@
     md:space-x-10">
     <div>
       <a href="/" class="flex">
-        <img class="h-8 w-auto sm:h-10" src="/logo-512.webp" alt="Workflow" />
+        <img class="h-8 w-auto sm:h-10" src="/logo-512.png" alt="Workflow" />
       </a>
     </div>
     <div class="-mr-2 -my-2 md:hidden">

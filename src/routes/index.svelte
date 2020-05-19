@@ -34,7 +34,7 @@
               <a href="/">
                 <img
                   class="h-8 w-auto sm:h-24 sm:mt-8"
-                  src="/logo-512.webp"
+                  src="/logo-512.png"
                   alt="" />
               </a>
               <div class="-mr-2 flex items-center md:hidden">
