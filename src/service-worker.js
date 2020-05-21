@@ -43,10 +43,10 @@ self.addEventListener('fetch', event => {
 	if (url.hostname === self.location.hostname && url.port !== self.location.port) return;
 
 	// always serve static files and bundler-generated assets from cache
-	if (url.host === self.location.host && cached.has(url.pathname)) {
-		event.respondWith(caches.match(event.request));
-		return;
-	}
+	// if (url.host === self.location.host && cached.has(url.pathname)) {
+	// 	event.respondWith(caches.match(event.request));
+	// 	return;
+	// }
 
 	// for pages, you might want to serve a shell `service-worker-index.html` file,
 	// which Sapper has generated for you. It's not right for every
@@ -58,7 +58,7 @@ self.addEventListener('fetch', event => {
 	}
 	*/
 
-	if (event.request.cache === 'only-if-cached') return;
+	// if (event.request.cache === 'only-if-cached') return;
 
 	// for everything else, try the network first, falling back to
 	// cache if the user is offline. (If the pages never change, you
