@@ -2,29 +2,6 @@
   import MobileMenu from "../../components/MobileMenu.svelte";
 </script>
 
-<style>
-  .top {
-    background: rgb(52, 143, 65);
-    background: radial-gradient(
-      circle,
-      rgba(52, 143, 65, 1) 52%,
-      rgba(32, 97, 41, 1) 100%
-    );
-  }
-
-  .support-btn {
-    background-color: #eaa739;
-  }
-
-  .support-btn:hover {
-    background-color: #ffbd50;
-  }
-
-  .support-btn:active {
-    background-color: #d89a35;
-  }
-</style>
-
 <div class="top pb-8">
   <div class="relative">
     <div
