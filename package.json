@@ -1,6 +1,6 @@
 {
-  "name": "tibu-ui",
-  "description": "Tibu UI",
+  "name": "nexusafrik",
+  "description": "NexusAfrik",
   "version": "0.0.1",
   "scripts": {
     "watch:tailwind": "postcss assets/tailwind.css -o static/index.css -w",
