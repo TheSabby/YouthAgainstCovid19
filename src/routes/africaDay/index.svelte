@@ -7,8 +7,9 @@
     class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start
     md:space-x-10">
     <div>
-      <a href="/" class="flex">
-        <img class="h-8 w-auto sm:h-10" src="/logo-512.png" alt="Workflow" />
+      <a href="/" class="text-2xl font-extrabold text-black tracking-tighter hover:text-black active:text-black">
+        NexusAfrik
+        <!-- <img class="h-8 w-auto sm:h-10" src="/logo-512.png" alt="Workflow" /> -->
       </a>
     </div>
     <div class="-mr-2 -my-2 md:hidden">
@@ -30,7 +31,7 @@
   </div>
 </div>
 
-<div class="flex items-center justify-center p-8">
+<div class="flex items-center justify-center p-4 video-area">
   <iframe
     title="Africa Day videos"
     width="1024"
@@ -41,3 +42,13 @@
     picture-in-picture"
     allowfullscreen />
 </div>
+
+<img class="hidden sm:block" src="/AfricaDay_BannerLarge.png" alt="Africa Day" />
+<img class="sm:hidden" src="/AfricaDay_BannerMobile.png" alt="Africa Day" />
+
+<style>
+  .video-area {
+    background: rgb(52,143,65);
+    background: radial-gradient(circle, rgba(52,143,65,1) 52%, rgba(32,97,41,1) 100%);
+  }
+</style>
