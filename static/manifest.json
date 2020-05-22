@@ -1,8 +1,8 @@
 {
 	"background_color": "#ffffff",
 	"theme_color": "#91BE4A",
-	"name": "African Youth Against COVID-19",
-	"short_name": "AYACOVID-19",
+	"name": "NexusAfrik",
+	"short_name": "NexusAfrik",
 	"display": "minimal-ui",
 	"start_url": "/",
 	"icons": [
