@@ -29,7 +29,7 @@
   }
 </style>
 
-<div class="top pb-16">
+<div class="top pb-16 min-h-screen">
   <div class="relative">
     <div
       class="flex justify-between items-center px-4 py-6 sm:px-6
@@ -105,8 +105,8 @@
       </a>
       <a
         href="https://twitter.com/intent/tweet?button_hashtag=Together4StrongerAfrica&ref_src=twsrc%5Etfw"
-        class="text-white hover:text-gray-300
-        focus:text-white active:text-gray-500">
+        class="text-white hover:text-gray-300 focus:text-white
+        active:text-gray-500">
         #Together4StrongerAfrica
       </a>
     </div>
@@ -193,5 +193,52 @@
         Support Us
       </button>
     </span>
+
+    <section class="py-12 overflow-hidden">
+      <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative">
+          <img class=" h-16 mx-auto" src="/OYE-Logo.png" alt="OYE Logo" />
+          <blockquote class="mt-6">
+            <div
+              class="max-w-3xl mx-auto text-center text-2xl leading-9
+              font-medium text-white">
+              <p>
+                &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nemo expedita voluptas culpa sapiente alias molestiae. Numquam
+                corrupti in laborum sed rerum et corporis.&rdquo;
+              </p>
+            </div>
+            <footer class="mt-8">
+              <div class="md:flex md:items-center md:justify-center">
+                <div class="md:flex-shrink-0">
+                  <img
+                    class="mx-auto h-10 w-10 rounded-full"
+                    src="/Aya-Chebbi.jpg"
+                    alt="Special Envoy on Youth, Aya Chebbi" />
+                </div>
+                <div
+                  class="mt-3 text-center md:mt-0 md:ml-4 md:flex
+                  md:items-center">
+                  <div class="text-base leading-6 font-medium text-white">
+                    Aya Chebbi
+                  </div>
+
+                  <svg
+                    class="hidden md:block mx-1 h-5 w-5 gold"
+                    fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path d="M11 0h3L9 20H6l5-20z" />
+                  </svg>
+
+                  <div class="text-base leading-6 font-medium text-gray-300">
+                    Special Envoy on Youth
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
   </div>
 </div>
