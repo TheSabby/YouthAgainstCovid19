@@ -80,14 +80,10 @@
     <span class="gold">stronger Africa</span>
   </h1>
 
-  <img
-    class="mt-8 hidden sm:block"
-    src="/AfricaDay_BannerLarge.jpg"
-    alt="Africa Day" />
-  <img
-    class="mt-8 sm:hidden"
-    src="/AfricaDay_BannerMobile.jpg"
-    alt="Africa Day" />
+  <picture>
+    <source media="(max-width: 640px)" srcset="/AfricaDay_BannerMobile.jpg" />
+    <img class="mt-8" src="/AfricaDay_BannerLarge.jpg" alt="Africa Day" />
+  </picture>
 
   <!-- <div class="mt-4 flex items-center justify-center p-4">
     <div

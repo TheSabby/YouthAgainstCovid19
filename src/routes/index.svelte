@@ -145,6 +145,8 @@
 </div>
 
 <a href="/africaDay">
-  <img class="hidden sm:block" src="/AfricaDay_BannerLarge.jpg" alt="Africa Day" />
-  <img class="sm:hidden" src="/AfricaDay_BannerMobile.jpg" alt="Africa Day" />
+  <picture>
+    <source media="(max-width: 640px)" srcset="/AfricaDay_BannerMobile.jpg" />
+    <img src="/AfricaDay_BannerLarge.jpg" alt="Africa Day" />
+  </picture>
 </a>
