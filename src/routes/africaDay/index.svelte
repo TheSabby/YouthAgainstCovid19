@@ -29,6 +29,15 @@
   }
 </style>
 
+<svelte:head>
+  <title>Africa Day Pre-event | NexusAfrik</title>
+  <meta
+    name="description"
+    content="NexusAfrik is a collective of African youth who want to make a
+    difference in the continent and have an impact in the fight against the
+    novel coronavirus." />
+</svelte:head>
+
 <div class="top pb-16 min-h-screen">
   <div class="relative">
     <div
@@ -73,11 +82,11 @@
 
   <img
     class="mt-8 hidden sm:block"
-    src="/AfricaDay_BannerLarge.png"
+    src="/AfricaDay_BannerLarge.jpg"
     alt="Africa Day" />
   <img
     class="mt-8 sm:hidden"
-    src="/AfricaDay_BannerMobile.png"
+    src="/AfricaDay_BannerMobile.jpg"
     alt="Africa Day" />
 
   <!-- <div class="mt-4 flex items-center justify-center p-4">

@@ -145,6 +145,6 @@
 </div>
 
 <a href="/africaDay">
-  <img class="hidden sm:block" src="/AfricaDay_BannerLarge.png" alt="Africa Day" />
-  <img class="sm:hidden" src="/AfricaDay_BannerMobile.png" alt="Africa Day" />
+  <img class="hidden sm:block" src="/AfricaDay_BannerLarge.jpg" alt="Africa Day" />
+  <img class="sm:hidden" src="/AfricaDay_BannerMobile.jpg" alt="Africa Day" />
 </a>
