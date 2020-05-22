@@ -189,26 +189,29 @@
     </div>
 
     <span class="mt-8 inline-flex rounded-md shadow-sm">
-      <button
-        type="button"
+      <a
+        href="https://au.int/aucovid19responsefund"
         class="support-btn inline-flex items-center px-6 py-3 border
         border-transparent text-2xl tracking-tight leading-6 font-semibold
-        rounded-md text-white focus:outline-none transition ease-in-out
-        duration-150">
+        rounded-md text-white hover:text-white active:text-white
+        focus:outline-none transition ease-in-out focus:text-white duration-150"
+        target="_blank"
+        rel="noopener noreferrer">
         Support Us
-      </button>
+      </a>
     </span>
 
-    <section class="py-12 overflow-hidden">
+    <section class="py-8 overflow-hidden">
       <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative">
-          <img class=" h-16 mx-auto" src="/OYE-Logo.png" alt="OYE Logo" />
-          <blockquote class="mt-6">
+          <blockquote>
             <div
               class="max-w-3xl mx-auto text-center text-2xl leading-9
               font-medium text-white">
               <p>
-                &ldquo;In celebration of the 57 years of African unity, show up for Africa today & support us to fundraise for Africa COVID-19 Response Fund.&rdquo;
+                &ldquo;In celebration of the 57 years of African unity, show up
+                for Africa today & support us to fundraise for Africa COVID-19
+                Response Fund.&rdquo;
               </p>
             </div>
             <footer class="mt-8">
