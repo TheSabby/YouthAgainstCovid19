@@ -208,9 +208,7 @@
               class="max-w-3xl mx-auto text-center text-2xl leading-9
               font-medium text-white">
               <p>
-                &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nemo expedita voluptas culpa sapiente alias molestiae. Numquam
-                corrupti in laborum sed rerum et corporis.&rdquo;
+                &ldquo;In celebration of the 57 years of African unity, show up for Africa today & support us to fundraise for Africa COVID-19 Response Fund.&rdquo;
               </p>
             </div>
             <footer class="mt-8">
