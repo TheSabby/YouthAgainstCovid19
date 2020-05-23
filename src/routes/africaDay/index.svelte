@@ -81,8 +81,8 @@
   </h1>
 
   <picture>
-    <source media="(max-width: 640px)" srcset="/AfricaDay_BannerMobile.jpg" />
-    <img class="mt-8" src="/AfricaDay_BannerLarge.jpg" alt="Africa Day" />
+    <source media="(max-width: 640px)" srcset="/PreAfricaDay_BannerMobile.jpg" />
+    <img class="mt-8" src="/PreAfricaDay_BannerLarge.jpg" alt="Africa Day" />
   </picture>
 
   <!-- <div class="mt-4 flex items-center justify-center p-4">
