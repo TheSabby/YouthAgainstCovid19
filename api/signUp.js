@@ -1,8 +1,8 @@
 const { db } = require("./_utils/firebase");
 const signUpSubmissionsRef = db.collection('sign_up_submissions');
 
-module.exports = (req, res) => {
-  const submission = signUpSubmissionsRef.add({
+module.exports = async (req, res) => {
+  const submission = await signUpSubmissionsRef.add({
     test: true
   });
 
