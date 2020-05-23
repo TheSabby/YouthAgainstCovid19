@@ -36,10 +36,6 @@
                 class="text-2xl font-extrabold text-black tracking-tighter
                 hover:text-black active:text-black">
                 NexusAfrik
-                <!-- <img
-                  class="h-8 w-auto sm:h-24 sm:mt-8"
-                  src="/logo-512.png"
-                  alt="" /> -->
               </a>
               <div class="-mr-2 flex items-center md:hidden">
                 <MobileMenu />
@@ -67,14 +63,14 @@
               focus:outline-none focus:text-gray-900 transition duration-150
               ease-in-out">
               Our Network
-            </a>
+            </a> -->
             <a
-              href="#"
+              href="/join"
               class="ml-8 font-medium text-green-600 hover:text-green-900
               focus:outline-none focus:text-green-700 transition duration-150
               ease-in-out">
               Join
-            </a> -->
+            </a>
           </div>
         </nav>
       </div>
@@ -93,45 +89,18 @@
           <p
             class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl
             sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            We add visibility to existing projects, provide networking
+            opportunities, connect NGOs with potential partners, and support
+            research initiatives. Join the fastest growing community of young people in Africa!
           </p>
-          <div
-            class="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left
-            lg:mx-0">
-            <p class="text-base font-medium text-gray-900">
-              Sign up to receive updates about the network.
-            </p>
-            <form action="#" method="POST" class="mt-3 sm:flex">
-              <input
-                aria-label="Email"
-                class="appearance-none block w-full px-3 py-3 border
-                border-gray-300 text-base leading-6 rounded-md
-                placeholder-gray-500 shadow-sm focus:outline-none
-                focus:placeholder-gray-400 focus:shadow-outline
-                focus:border-blue-300 transition duration-150 ease-in-out
-                sm:flex-1"
-                placeholder="Enter your email" />
-              <button
-                type="submit"
-                class="mt-3 w-full px-6 py-3 border border-transparent text-base
-                leading-6 font-medium rounded-md text-white bg-gray-800
-                shadow-sm hover:bg-gray-700 focus:outline-none
-                focus:shadow-outline active:bg-gray-900 transition duration-150
-                ease-in-out sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex
-                sm:items-center sm:w-auto">
-                Notify me
-              </button>
-            </form>
-            <p class="mt-3 text-sm leading-5 text-gray-500">
-              We care about the protection of your data. Read our
-              <a href="/privacy" class="font-medium text-gray-900 underline">
-                Privacy Policy
-              </a>
-              .
-            </p>
-          </div>
+          <a
+            href="/join"
+            class="mt-2 inline-block rounded-md shadow px-8 py-3 border border-transparent
+            text-base leading-6 font-medium rounded-md text-white bg-green-600
+            hover:bg-green-500 focus:outline-none focus:shadow-outline
+            transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+            Get started
+          </a>
         </div>
       </div>
     </div>
@@ -140,13 +109,15 @@
     <img
       class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
       src="/strong-hand.jpg"
-      alt="" />
+      alt="Strong fist" />
   </div>
 </div>
 
 <a href="/africaDay">
   <picture>
-    <source media="(max-width: 640px)" srcset="/PreAfricaDay_BannerMobile.jpg" />
+    <source
+      media="(max-width: 640px)"
+      srcset="/PreAfricaDay_BannerMobile.jpg" />
     <img src="/PreAfricaDay_BannerLarge.jpg" alt="Africa Day" />
   </picture>
 </a>

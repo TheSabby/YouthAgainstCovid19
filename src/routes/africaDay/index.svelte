@@ -53,10 +53,6 @@
   .gold {
     color: #eaa739;
   }
-
-  .time {
-    font-family: monospace;
-  }
 </style>
 
 <svelte:head>

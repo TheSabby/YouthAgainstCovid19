@@ -88,16 +88,16 @@
           Our Network
         </a> -->
         </div>
-        <!-- <div>
-        <a
-          href="#"
-          class="block w-full px-5 py-3 text-center font-medium
-          text-green-600 bg-gray-50 hover:bg-gray-100
-          hover:text-green-700 focus:outline-none focus:bg-gray-100
-          focus:text-green-700 transition duration-150 ease-in-out">
-          Join
-        </a>
-      </div> -->
+        <div>
+          <a
+            href="/join"
+            class="block w-full px-5 py-3 text-center font-medium text-green-600
+            bg-gray-50 hover:bg-gray-100 hover:text-green-700 focus:outline-none
+            focus:bg-gray-100 focus:text-green-700 transition duration-150
+            ease-in-out">
+            Join
+          </a>
+        </div>
       </div>
     </div>
   </div>
