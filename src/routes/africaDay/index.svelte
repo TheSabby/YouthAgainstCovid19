@@ -84,9 +84,7 @@
   <title>Africa Day Pre-event | NexusAfrik</title>
   <meta
     name="description"
-    content="NexusAfrik is a collective of African youth who want to make a
-    difference in the continent and have an impact in the fight against the
-    novel coronavirus." />
+    content="It's time to celebrate Africa Liberation Day. We're going digital with Africa's talented musicians &amp; artists &amp; African Union leadership. Watch on the 24th the Pre-Event featuring Pape Diouf to know more about the concert and Africa COVID-19 Fund." />
 </svelte:head>
 
 <div class="top pb-16 min-h-screen">
