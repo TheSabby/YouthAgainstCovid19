@@ -1,5 +1,31 @@
 <script>
+  import { onMount } from "svelte";
+  import moment from "moment";
   import MobileMenu from "../../components/MobileMenu.svelte";
+
+  function pad(n, width, z) {
+    z = z || "0";
+    n = n + "";
+    return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+  }
+
+  const eventTime = 1590332400000;
+  const currentTime = Date.now();
+  const interval = 1000;
+  let diffTime = eventTime - currentTime;
+  let duration = moment.duration(diffTime, "milliseconds");
+  let hours = pad(duration.as("hours").toFixed(0), 2);
+  let minutes = pad(duration.minutes(), 2);
+  let seconds = pad(duration.seconds(), 2);
+
+  onMount(() => {
+    setInterval(() => {
+      duration = moment.duration(duration - interval, "milliseconds");
+      hours = pad(duration.as("hours").toFixed(0), 2);
+      minutes = pad(duration.minutes(), 2);
+      seconds = pad(duration.seconds(), 2);
+    }, interval);
+  });
 </script>
 
 <style>
@@ -80,24 +106,33 @@
     <span class="gold">stronger Africa</span>
   </h1>
 
-  <picture>
-    <source media="(max-width: 640px)" srcset="/PreAfricaDay_BannerMobile.jpg" />
-    <img class="mt-8" src="/PreAfricaDay_BannerLarge.jpg" alt="Africa Day" />
-  </picture>
+  {#if duration > 0}
+    <h3
+      class="mt-6 px-1 text-white text-center text-3xl font-extrabold
+      tracking-tighter sm:text-4xl sm:font-extrabold md:leading-10
+      sm:tracking-tight">
+      Time remaining: {`${hours}:${minutes}:${seconds}`}
+    </h3>
 
-  <!-- <div class="mt-4 flex items-center justify-center p-4">
-    <div
-      style="height: 576px; width: 1024px; max-width: 90%; background: #000" />
-    <iframe
-      title="Africa Day videos"
-      width="1024"
-      height="576"
-      src="https://www.youtube-nocookie.com/embed/4tYjRp2pl3c"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture"
-      allowfullscreen />
-  </div> -->
+    <picture>
+      <source
+        media="(max-width: 640px)"
+        srcset="/PreAfricaDay_BannerMobile.jpg" />
+      <img class="mt-8" src="/PreAfricaDay_BannerLarge.jpg" alt="Africa Day" />
+    </picture>
+  {:else}
+    <div class="mt-4 flex items-center justify-center p-4">
+      <iframe
+        title="Africa Day pre-event"
+        width="1024"
+        height="576"
+        src="https://www.youtube-nocookie.com/embed/QANhEAZWSx0"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope;
+        picture-in-picture"
+        allowfullscreen />
+    </div>
+  {/if}
 
   <div class="mt-8 flex flex-col items-center">
     <div class="text-2xl tracking-tight font-bold text-center">
