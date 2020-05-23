@@ -10,7 +10,6 @@ module.exports = (req, res) => {
     body: req.body,
     query: req.query,
     cookies: req.cookies,
-    submission,
-    cred: process.env.GCLOUD_CREDENTIALS
+    submission
   });
 };
