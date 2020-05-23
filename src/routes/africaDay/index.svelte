@@ -8,7 +8,7 @@
   let email = "";
   async function handleNewsletterSignUp() {
     signingUp = true;
-    const response = await fetch('/api/newsletterSignUp', {
+    const response = await fetch("/api/newsletterSignUp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -17,7 +17,7 @@
     });
 
     if (response.ok) {
-      localStorage.setItem('africa_day_newsletter_sign_up', true);
+      localStorage.setItem("africa_day_newsletter_sign_up", true);
       signedUp = true;
     }
 
@@ -40,7 +40,7 @@
   let seconds = pad(duration.seconds(), 2);
 
   onMount(() => {
-    if(localStorage.getItem('africa_day_newsletter_sign_up')) {
+    if (localStorage.getItem("africa_day_newsletter_sign_up")) {
       signedUp = true;
     }
 
@@ -207,7 +207,9 @@
       <a
         href="https://twitter.com/intent/tweet?button_hashtag=StrongerTogether&ref_src=twsrc%5Etfw"
         class="text-white hover:text-gray-300 focus:text-white
-        active:text-gray-500">
+        active:text-gray-500"
+        target="_blank"
+        rel="noopener noreferrer">
         #StrongerTogether
       </a>
     </div>
