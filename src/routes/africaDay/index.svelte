@@ -97,7 +97,7 @@
     more about the concert and Africa COVID-19 Fund." />
   <meta
     property="og:image"
-    content="https://nexusafrik.org/AfricaDay_BannerLarge.jpg" />
+    content="https://nexusafrik.org/PreAfricaDay_BannerLarge.jpg" />
   <meta property="og:url" content="https://nexusafrik.org/africaDay" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:site_name" content="NexusAfrik">
