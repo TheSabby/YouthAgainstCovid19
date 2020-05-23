@@ -88,7 +88,7 @@
           Our Network
         </a> -->
         </div>
-        <div>
+        <!-- <div>
           <a
             href="/join"
             class="block w-full px-5 py-3 text-center font-medium text-green-600
@@ -97,7 +97,7 @@
             ease-in-out">
             Join
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

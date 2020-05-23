@@ -3,6 +3,27 @@
   import moment from "moment";
   import MobileMenu from "../../components/MobileMenu.svelte";
 
+  let signingUp = false;
+  let signedUp = false;
+  let email = "";
+  async function handleNewsletterSignUp() {
+    signingUp = true;
+    const response = await fetch({
+      url: "/api/newsletterSignUp",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email })
+    });
+
+    if (response.ok) {
+      signedUp = true;
+    }
+
+    signingUp = false;
+  }
+
   function pad(n, width, z) {
     z = z || "0";
     n = n + "";
@@ -38,15 +59,15 @@
     );
   }
 
-  .support-btn {
+  .gold-btn {
     background-color: #eaa739;
   }
 
-  .support-btn:hover {
+  .gold-btn:hover {
     background-color: #ffbd50;
   }
 
-  .support-btn:active {
+  .gold-btn:active {
     background-color: #d89a35;
   }
 
@@ -102,7 +123,7 @@
     class="mt-6 px-1 text-white text-center text-5xl font-extrabold
     tracking-tighter sm:text-6xl sm:font-extrabold md:leading-10
     sm:tracking-tight">
-    Together for a
+    Together for
     <span class="gold">stronger Africa</span>
   </h1>
 
@@ -112,6 +133,49 @@
       sm:text-4xl sm:font-extrabold md:leading-10 font-mono">
       {`${hours}:${minutes}:${seconds}`}
     </h3>
+
+    <div class="mt-2 flex flex-col px-2 sm:items-center">
+      {#if !signedUp}
+        <h4
+          class="text-center text-2xl leading-9 font-extrabold tracking-tight
+          text-white sm:text-3xl sm:leading-10">
+          Want to get notified?
+        </h4>
+        <form
+          on:submit|preventDefault={handleNewsletterSignUp}
+          class="mt-4 sm:flex">
+          <input
+            aria-label="Email address"
+            type="email"
+            required
+            bind:value={email}
+            disabled={signingUp}
+            class="appearance-none w-full px-5 py-3 border border-gray-300
+            text-base leading-6 rounded-md text-gray-900 bg-white
+            placeholder-gray-500 focus:outline-none focus:shadow-outline
+            focus:border-blue-300 transition duration-150 ease-in-out
+            sm:max-w-xs"
+            placeholder="Enter your email" />
+          <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+            <button
+              type="submit"
+              disabled={signingUp}
+              class="w-full flex items-center justify-center px-5 py-3 border
+              border-transparent text-base leading-6 font-medium rounded-md
+              text-white gold-btn focus:outline-none focus:shadow-outline
+              transition duration-150 ease-in-out">
+              {signingUp ? 'Signing up...' : 'Notify me'}
+            </button>
+          </div>
+        </form>
+      {:else}
+        <h4
+          class="text-center text-xl leading-9 font-extrabold tracking-tight
+          text-white sm:text-2xl sm:leading-10">
+          You will be notified!
+        </h4>
+      {/if}
+    </div>
 
     <picture>
       <source
@@ -183,7 +247,7 @@
     <span class="mt-8 inline-flex rounded-md shadow-sm">
       <a
         href="https://au.int/aucovid19responsefund"
-        class="support-btn inline-flex items-center px-6 py-3 border
+        class="gold-btn inline-flex items-center px-6 py-3 border
         border-transparent text-2xl tracking-tight leading-6 font-semibold
         rounded-md text-white hover:text-white active:text-white
         focus:outline-none transition ease-in-out focus:text-white duration-150"

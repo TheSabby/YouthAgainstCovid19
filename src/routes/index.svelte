@@ -64,13 +64,13 @@
               ease-in-out">
               Our Network
             </a> -->
-            <a
+            <!-- <a
               href="/join"
               class="ml-8 font-medium text-green-600 hover:text-green-900
               focus:outline-none focus:text-green-700 transition duration-150
               ease-in-out">
               Join
-            </a>
+            </a> -->
           </div>
         </nav>
       </div>
@@ -93,14 +93,14 @@
             opportunities, connect NGOs with potential partners, and support
             research initiatives. Join the fastest growing community of young people in Africa!
           </p>
-          <a
+          <!-- <a
             href="/join"
             class="mt-2 inline-block rounded-md shadow px-8 py-3 border border-transparent
             text-base leading-6 font-medium rounded-md text-white bg-green-600
             hover:bg-green-500 focus:outline-none focus:shadow-outline
             transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
             Get started
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
