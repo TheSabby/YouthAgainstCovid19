@@ -17,6 +17,7 @@
     });
 
     if (response.ok) {
+      localStorage.setItem('africa_day_newsletter_sign_up', true);
       signedUp = true;
     }
 
@@ -39,6 +40,10 @@
   let seconds = pad(duration.seconds(), 2);
 
   onMount(() => {
+    if(localStorage.getItem('africa_day_newsletter_sign_up')) {
+      signedUp = true;
+    }
+
     setInterval(() => {
       duration = moment.duration(duration - interval, "milliseconds");
       hours = pad(duration.as("hours").toFixed(0), 2);
