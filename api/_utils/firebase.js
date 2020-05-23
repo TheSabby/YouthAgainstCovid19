@@ -1,7 +1,13 @@
 const admin = require("firebase-admin");
 
+const serviceAccount = JSON.parse(
+  Buffer.from(process.env.GCLOUD_CREDENTIALS, "base64").toString()
+);
+
 try {
-  admin.initializeApp();
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+  });
 
   // admin.initializeApp({
   //   credential: admin.credential.cert({
@@ -14,7 +20,7 @@ try {
 } catch (error) {
   if (!/already exists/u.test(error.message)) {
     console.error(error);
-    console.error('Firebase admin initialization error', error.stack);
+    console.error("Firebase admin initialization error", error.stack);
   }
 }
 
