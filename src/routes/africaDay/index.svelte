@@ -84,7 +84,25 @@
   <title>Africa Day Pre-event | NexusAfrik</title>
   <meta
     name="description"
-    content="It's time to celebrate Africa Liberation Day. We're going digital with Africa's talented musicians &amp; artists &amp; African Union leadership. Watch on the 24th the Pre-Event featuring Pape Diouf to know more about the concert and Africa COVID-19 Fund." />
+    content="It's time to celebrate Africa Liberation Day. We're going digital
+    with Africa's talented musicians &amp; artists &amp; African Union
+    leadership. Watch on the 24th the Pre-Event featuring Pape Diouf to know
+    more about the concert and Africa COVID-19 Fund." />
+  <meta property="og:title" content="Africa Day Pre-event | NexusAfrik" />
+  <meta
+    property="og:description"
+    content="It's time to celebrate Africa Liberation Day. We're going digital
+    with Africa's talented musicians &amp; artists &amp; African Union
+    leadership. Watch on the 24th the Pre-Event featuring Pape Diouf to know
+    more about the concert and Africa COVID-19 Fund." />
+  <meta
+    property="og:image"
+    content="https://nexusafrik.org/AfricaDay_BannerLarge.jpg" />
+  <meta property="og:url" content="https://nexusafrik.org/africaDay" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:site_name" content="NexusAfrik">
+  <meta name="twitter:image:alt" content="Africa Day Pre-Event">
+  <meta name="twitter:site" content="@nexusafrik">
 </svelte:head>
 
 <div class="top pb-16 min-h-screen">
