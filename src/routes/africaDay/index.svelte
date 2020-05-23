@@ -8,8 +8,7 @@
   let email = "";
   async function handleNewsletterSignUp() {
     signingUp = true;
-    const response = await fetch({
-      url: "/api/newsletterSignUp",
+    const response = await fetch('/api/newsletterSignUp', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
