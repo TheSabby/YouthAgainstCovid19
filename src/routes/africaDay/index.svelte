@@ -53,6 +53,10 @@
   .gold {
     color: #eaa739;
   }
+
+  .time {
+    font-family: monospace;
+  }
 </style>
 
 <svelte:head>
@@ -109,9 +113,8 @@
   {#if duration > 0}
     <h3
       class="mt-6 px-1 text-white text-center text-3xl font-extrabold
-      tracking-tighter sm:text-4xl sm:font-extrabold md:leading-10
-      sm:tracking-tight">
-      Time remaining: {`${hours}:${minutes}:${seconds}`}
+      sm:text-4xl sm:font-extrabold md:leading-10 font-mono">
+      {`${hours}:${minutes}:${seconds}`}
     </h3>
 
     <picture>
@@ -123,10 +126,10 @@
   {:else}
     <div class="mt-4 flex items-center justify-center p-4">
       <iframe
-        title="Africa Day pre-event"
+        title="Africa Day Pre-event"
         width="1024"
         height="576"
-        src="https://www.youtube-nocookie.com/embed/QANhEAZWSx0"
+        src="https://www.youtube-nocookie.com/embed/8FP4y2mGess"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope;
         picture-in-picture"
@@ -202,9 +205,9 @@
               class="max-w-3xl mx-auto text-center text-2xl leading-9
               font-medium text-white">
               <p>
-                &ldquo;In celebration of the 57 years of African unity, show up
-                for Africa today & support us to fundraise for Africa COVID-19
-                Response Fund.&rdquo;
+                &ldquo;In celebration of the 57 years of African unity, we rely
+                on your solidarity, to show up for Africa today, and support us
+                to fundraise for Africa COVID-19 Response Fund.&rdquo;
               </p>
             </div>
             <footer class="mt-8">
