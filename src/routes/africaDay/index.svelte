@@ -10,18 +10,19 @@
   }
 
   const eventTime = 1590332400000;
-  const currentTime = Date.now();
-  const interval = 1000;
-  let diffTime = eventTime - currentTime;
+  let diffTime = 3600000;
   let duration = moment.duration(diffTime, "milliseconds");
-  let hours = pad(duration.as("hours").toFixed(0), 2);
+  let hours = pad(duration.hours(), 2);
   let minutes = pad(duration.minutes(), 2);
   let seconds = pad(duration.seconds(), 2);
 
   onMount(() => {
+    const interval = 1000;
+    const currentTime = Date.now();
+    diffTime = eventTime - currentTime;
     setInterval(() => {
       duration = moment.duration(duration - interval, "milliseconds");
-      hours = pad(duration.as("hours").toFixed(0), 2);
+      hours = pad(duration.hours(), 2);
       minutes = pad(duration.minutes(), 2);
       seconds = pad(duration.seconds(), 2);
     }, interval);
