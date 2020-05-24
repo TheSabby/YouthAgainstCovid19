@@ -3,9 +3,7 @@ const newsletterSignUps = db.collection("newsletter_sign_ups");
 
 module.exports = async (req, res) => {
   const allNewsletterSignUps = await newsletterSignUps
-    .get()
-    .then((snapshot) => snapshot.map((doc) => doc.data()))
-    .catch((err) => {
+    .get().catch((err) => {
       console.error("Error getting documents", err);
       return {
         err,
