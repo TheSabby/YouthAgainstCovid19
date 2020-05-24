@@ -30,6 +30,7 @@
     "fastify-url-data": "^2.4.0",
     "firebase-admin": "^8.12.1",
     "flatpickr": "^4.6.3",
+    "json2csv": "^5.0.1",
     "moment": "^2.26.0",
     "polka": "next",
     "rollup-plugin-includepaths": "^0.2.3",
