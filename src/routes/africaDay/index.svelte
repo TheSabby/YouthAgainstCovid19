@@ -61,14 +61,14 @@
   <meta
     name="description"
     content="It's time to celebrate Africa Liberation Day. We're going digital
-    with Africa's talented musicians &amp; artists &amp; African Union leadership. Watch
-    on the 25 Africa Solidarity Concert." />
+    with Africa's talented musicians &amp; artists &amp; African Union
+    leadership. Watch on the 25 Africa Solidarity Concert." />
   <meta property="og:title" content="Africa Day | NexusAfrik" />
   <meta
     property="og:description"
     content="It's time to celebrate Africa Liberation Day. We're going digital
-    with Africa's talented musicians &amp; artists &amp; African Union leadership. Watch
-    on the 25 Africa Solidarity Concert." />
+    with Africa's talented musicians &amp; artists &amp; African Union
+    leadership. Watch on the 25 Africa Solidarity Concert." />
   <meta
     property="og:image"
     content="https://nexusafrik.org/AfricaDay_BannerLarge.jpg" />
@@ -141,7 +141,14 @@
       <img class="mt-8" src="/AfricaDay_BannerLarge.jpg" alt="Africa Day" />
     </picture>
   {:else}
-    <div class="mt-4 flex items-center justify-center p-4">
+    <div style="height: 576px" class="flex flex-col justify-center">
+      <h4
+        class="text-center text-2xl leading-9 font-extrabold tracking-tight
+        text-white sm:text-3xl sm:leading-10">
+        Please refresh the page to watch the stream.
+      </h4>
+    </div>
+    <!-- <div class="mt-4 flex items-center justify-center p-4">
       <iframe
         title="Africa Day Pre-event"
         width="1024"
@@ -151,7 +158,7 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope;
         picture-in-picture"
         allowfullscreen />
-    </div>
+    </div> -->
   {/if}
 
   <h4
