@@ -61,16 +61,14 @@
   <meta
     name="description"
     content="It's time to celebrate Africa Liberation Day. We're going digital
-    with Africa's talented musicians &amp; artists &amp; African Union
-    leadership. Watch on the 24th the Pre-Event featuring Pape Diouf to know
-    more about the concert and Africa COVID-19 Fund." />
-  <meta property="og:title" content="Africa Day Pre-event | NexusAfrik" />
+    with Africa's talented musicians &amp; artists &amp; African Union leadership. Watch
+    on the 25 Africa Solidarity Concert." />
+  <meta property="og:title" content="Africa Day | NexusAfrik" />
   <meta
     property="og:description"
     content="It's time to celebrate Africa Liberation Day. We're going digital
-    with Africa's talented musicians &amp; artists &amp; African Union
-    leadership. Watch on the 24th the Pre-Event featuring Pape Diouf to know
-    more about the concert and Africa COVID-19 Fund." />
+    with Africa's talented musicians &amp; artists &amp; African Union leadership. Watch
+    on the 25 Africa Solidarity Concert." />
   <meta
     property="og:image"
     content="https://nexusafrik.org/AfricaDay_BannerLarge.jpg" />
