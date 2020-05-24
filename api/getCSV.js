@@ -26,6 +26,6 @@ module.exports = async (req, res) => {
   const csv = parse(allNewsletterSignUps, { fields });
 
   res.setHeader("Content-disposition", "attachment; filename=data.csv");
-  res.set("Content-Type", "text/csv");
+  res.setHeader("Content-Type", "text/csv");
   res.status(200).send(csv);
 };
