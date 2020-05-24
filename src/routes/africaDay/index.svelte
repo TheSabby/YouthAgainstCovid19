@@ -11,7 +11,7 @@
 
   const eventTime = 1590418800000;
   let duration = moment.duration(3600000, "milliseconds");
-  let hours = pad(duration.as("hours").toFixed(0), 2);
+  let hours = pad(duration.hours(), 2);
   let minutes = pad(duration.minutes(), 2);
   let seconds = pad(duration.seconds(), 2);
 
@@ -22,7 +22,7 @@
     duration = moment.duration(diffTime, "milliseconds");
     setInterval(() => {
       duration = moment.duration(duration - interval, "milliseconds");
-      hours = pad(duration.as("hours").toFixed(0), 2);
+      hours = pad(duration.hours(), 2);
       minutes = pad(duration.minutes(), 2);
       seconds = pad(duration.seconds(), 2);
     }, interval);
