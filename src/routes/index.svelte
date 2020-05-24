@@ -117,7 +117,7 @@
   <picture>
     <source
       media="(max-width: 640px)"
-      srcset="/PreAfricaDay_BannerMobile.jpg" />
-    <img src="/PreAfricaDay_BannerLarge.jpg" alt="Africa Day" />
+      srcset="/AfricaDay_BannerMobile.jpg" />
+    <img src="/AfricaDay_BannerLarge.jpg" alt="Africa Day" />
   </picture>
 </a>

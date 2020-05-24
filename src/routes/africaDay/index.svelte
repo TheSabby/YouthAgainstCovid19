@@ -9,9 +9,9 @@
     return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
   }
 
-  const eventTime = 1590332400000;
+  const eventTime = 1590418800000;
   let duration = moment.duration(3600000, "milliseconds");
-  let hours = pad(duration.hours(), 2);
+  let hours = pad(duration.as("hours").toFixed(0), 2);
   let minutes = pad(duration.minutes(), 2);
   let seconds = pad(duration.seconds(), 2);
 
@@ -22,7 +22,7 @@
     duration = moment.duration(diffTime, "milliseconds");
     setInterval(() => {
       duration = moment.duration(duration - interval, "milliseconds");
-      hours = pad(duration.hours(), 2);
+      hours = pad(duration.as("hours").toFixed(0), 2);
       minutes = pad(duration.minutes(), 2);
       seconds = pad(duration.seconds(), 2);
     }, interval);
@@ -57,7 +57,7 @@
 </style>
 
 <svelte:head>
-  <title>Africa Day Pre-event | NexusAfrik</title>
+  <title>Africa Day | NexusAfrik</title>
   <meta
     name="description"
     content="It's time to celebrate Africa Liberation Day. We're going digital
@@ -73,11 +73,11 @@
     more about the concert and Africa COVID-19 Fund." />
   <meta
     property="og:image"
-    content="https://nexusafrik.org/PreAfricaDay_BannerLarge.jpg" />
+    content="https://nexusafrik.org/AfricaDay_BannerLarge.jpg" />
   <meta property="og:url" content="https://nexusafrik.org/africaDay" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:site_name" content="NexusAfrik" />
-  <meta name="twitter:image:alt" content="Africa Day Pre-Event" />
+  <meta name="twitter:image:alt" content="Africa Day" />
   <meta name="twitter:site" content="@nexusafrik" />
 </svelte:head>
 
@@ -134,15 +134,13 @@
       <h4
         class="text-center text-2xl leading-9 font-extrabold tracking-tight
         text-white sm:text-3xl sm:leading-10">
-        It's almost time!
+        Don't miss it!
       </h4>
     </div>
 
     <picture>
-      <source
-        media="(max-width: 640px)"
-        srcset="/PreAfricaDay_BannerMobile.jpg" />
-      <img class="mt-8" src="/PreAfricaDay_BannerLarge.jpg" alt="Africa Day" />
+      <source media="(max-width: 640px)" srcset="/AfricaDay_BannerMobile.jpg" />
+      <img class="mt-8" src="/AfricaDay_BannerLarge.jpg" alt="Africa Day" />
     </picture>
   {:else}
     <div class="mt-4 flex items-center justify-center p-4">
@@ -157,6 +155,24 @@
         allowfullscreen />
     </div>
   {/if}
+
+  <h4
+    class="mt-8 text-center text-2xl leading-9 font-extrabold tracking-tight
+    text-white sm:text-3xl sm:leading-10">
+    Watch the pre-event
+  </h4>
+
+  <div class="mt-4 flex items-center justify-center p-4">
+    <iframe
+      title="Africa Day Pre-event"
+      width="1024"
+      height="576"
+      src="https://www.youtube-nocookie.com/embed/8FP4y2mGess"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture"
+      allowfullscreen />
+  </div>
 
   <div class="mt-8 flex flex-col items-center">
     <div class="text-2xl tracking-tight font-bold text-center">
