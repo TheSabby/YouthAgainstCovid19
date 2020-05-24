@@ -7,6 +7,10 @@ module.exports = async (req, res) => {
     .then((snapshot) => snapshot.map((doc) => doc.data()))
     .catch((err) => {
       console.error("Error getting documents", err);
+      return {
+        err,
+        failed: true
+      }
     });
 
   res.json(allNewsletterSignUps);
