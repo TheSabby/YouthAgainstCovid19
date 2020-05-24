@@ -1,6 +1,6 @@
 const { db, admin } = require("./_utils/firebase");
 const newsletterSignUps = db.collection("newsletter_sign_ups");
-const json2csv = require("json2csv");
+const { parse } = require("json2csv");
 const moment = require("moment");
 
 const fields = ["email", "date"];
@@ -23,9 +23,9 @@ module.exports = async (req, res) => {
       };
     });
 
-  json2csv({ data: allNewsletterSignUps, fields }, function (err, csv) {
-    res.setHeader("Content-disposition", "attachment; filename=data.csv");
-    res.set("Content-Type", "text/csv");
-    res.status(200).send(csv);
-  });
+  const csv = parse(allNewsletterSignUps, { fields });
+
+  res.setHeader("Content-disposition", "attachment; filename=data.csv");
+  res.set("Content-Type", "text/csv");
+  res.status(200).send(csv);
 };
