@@ -1,5 +1,6 @@
 const { db, admin } = require("./_utils/firebase");
 const newsletterSignUps = db.collection("newsletter_sign_ups");
+const json2csv = require("json2csv");
 const moment = require("moment");
 
 const fields = ["email", "date"];
