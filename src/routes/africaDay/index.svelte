@@ -188,7 +188,9 @@
         class="text-white hover:text-gray-300 focus:text-white
         active:text-gray-500"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+        onclick="getOutboundLink('https://twitter.com/intent/tweet?button_hashtag=StrongerTogether&ref_src=twsrc%5Etfw');
+        return false;">
         #StrongerTogether
       </a>
     </div>
@@ -198,7 +200,9 @@
         href="https://twitter.com/_AfricanUnion"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-white hover:text-gray-300">
+        class="text-white hover:text-gray-300"
+        onclick="getOutboundLink('https://twitter.com/_AfricanUnion'); return
+        false;">
         <span class="sr-only">Twitter</span>
         <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
           <path
@@ -215,7 +219,9 @@
         href="https://www.facebook.com/AfricanUnionCommission/"
         target="_blank"
         rel="noopener noreferrer"
-        class="ml-6 text-white hover:text-gray-300">
+        class="ml-6 text-white hover:text-gray-300"
+        onclick="getOutboundLink('https://www.facebook.com/AfricanUnionCommission/');
+        return false;">
         <span class="sr-only">Facebook</span>
         <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
           <path
@@ -237,7 +243,9 @@
         rounded-md text-white hover:text-white active:text-white
         focus:outline-none transition ease-in-out focus:text-white duration-150"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+        onclick="getOutboundLink('https://au.int/aucovid19responsefund'); return
+        false;">
         Support Us
       </a>
     </span>
