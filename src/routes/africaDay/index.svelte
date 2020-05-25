@@ -146,27 +146,15 @@
     </picture>
   {:else}
     <div class="mt-4 flex items-center justify-center p-4">
-      <div
-        class="fb-video"
-        data-href="https://www.facebook.com/AFRIMAWARDS/videos/297765294684940/"
-        data-show-text="false"
-        data-width="1024">
-        <blockquote
-          cite="https://developers.facebook.com/AFRIMAWARDS/videos/297765294684940/"
-          class="fb-xfbml-parse-ignore">
-          <a
-            href="https://developers.facebook.com/AFRIMAWARDS/videos/297765294684940/" />
-          <p>
-            Watch LiVE! Africa Day #StrongerTogether Solidarity Concert for AU
-            Covid19 Response Fund.
-          </p>
-          Posted by
-          <a href="https://www.facebook.com/AFRIMAWARDS/">
-            All Africa Music Awards
-          </a>
-          on Monday, 25 May 2020
-        </blockquote>
-      </div>
+      <iframe
+        title="Africa Day"
+        width="1024"
+        height="576"
+        src="https://www.youtube-nocookie.com/embed/Mic-XQtG3_U"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope;
+        picture-in-picture"
+        allowfullscreen />
     </div>
   {/if}
 
