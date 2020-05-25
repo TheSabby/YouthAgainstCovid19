@@ -39,21 +39,28 @@
       gtag("config", "UA-167537008-1");
 
       /**
-      * Function that registers a click on an outbound link in Analytics.
-      * This function takes a valid URL string as an argument, and uses that URL string
-      * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-      * using 'navigator.sendBeacon' in browser that support it.
-      */
-      var getOutboundLink = function(url) {
-        gtag('event', 'click', {
-          'event_category': 'outbound',
-          'event_label': url,
-          'transport_type': 'beacon',
+       * Function that registers a click on an outbound link in Analytics.
+       * This function takes a valid URL string as an argument, and uses that URL string
+       * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+       * using 'navigator.sendBeacon' in browser that support it.
+       */
+      var getOutboundLink = function (url) {
+        gtag("event", "click", {
+          event_category: "outbound",
+          event_label: url,
+          transport_type: "beacon",
         });
-      }
+      };
     </script>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"
+    ></script>
     <!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
     <div id="sapper">%sapper.html%</div>
