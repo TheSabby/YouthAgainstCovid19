@@ -10,22 +10,26 @@
   }
 
   const eventTime = 1590418800000;
-  let duration = moment.duration(3600000, "milliseconds");
-  let hours = pad(duration.hours(), 2);
-  let minutes = pad(duration.minutes(), 2);
-  let seconds = pad(duration.seconds(), 2);
+  let displayPreEvent = false;
+  let duration = 0;
+  let hours = pad(0, 2);
+  let minutes = pad(0, 2);
+  let seconds = pad(0, 2);
 
   onMount(() => {
     const interval = 1000;
     const currentTime = Date.now();
     const diffTime = eventTime - currentTime;
     duration = moment.duration(diffTime, "milliseconds");
+
     setInterval(() => {
       duration = moment.duration(duration - interval, "milliseconds");
       hours = pad(duration.hours(), 2);
       minutes = pad(duration.minutes(), 2);
       seconds = pad(duration.seconds(), 2);
     }, interval);
+
+    setTimeout(() => (displayPreEvent = true), 1000);
   });
 </script>
 
@@ -154,23 +158,27 @@
     </div>
   {/if}
 
-  <h4
-    class="mt-8 text-center text-2xl leading-9 font-extrabold tracking-tight
-    text-white sm:text-3xl sm:leading-10">
-    Watch the pre-event
-  </h4>
+  {#if displayPreEvent}
+    <h4
+      class="mt-8 text-center text-2xl leading-9 font-extrabold tracking-tight
+      text-white sm:text-3xl sm:leading-10">
+      Watch the pre-event
+    </h4>
 
-  <div class="mt-4 flex items-center justify-center p-4">
-    <iframe
-      title="Africa Day Pre-event"
-      width="1024"
-      height="576"
-      src="https://www.youtube-nocookie.com/embed/8FP4y2mGess"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture"
-      allowfullscreen />
-  </div>
+    <div class="mt-4 flex items-center justify-center p-4">
+      <iframe
+        title="Africa Day Pre-event"
+        importance="low"
+        loading="lazy"
+        width="1024"
+        height="576"
+        src="https://www.youtube-nocookie.com/embed/8FP4y2mGess"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope;
+        picture-in-picture"
+        allowfullscreen />
+    </div>
+  {/if}
 
   <div class="mt-8 flex flex-col items-center">
     <div class="text-2xl tracking-tight font-bold text-center">
