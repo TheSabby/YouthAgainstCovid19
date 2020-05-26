@@ -125,60 +125,32 @@
     <span class="gold">stronger Africa</span>
   </h1>
 
-  {#if duration > 0}
-    <h3
-      class="mt-6 px-1 text-white text-center text-3xl font-extrabold
-      sm:text-4xl sm:font-extrabold md:leading-10 font-mono">
-      {`${hours}:${minutes}:${seconds}`}
-    </h3>
+  <div class="mt-4 flex items-center justify-center p-4">
+    <iframe
+      title="Africa Day"
+      width="1024"
+      height="576"
+      src="https://www.youtube-nocookie.com/embed/Mic-XQtG3_U"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture"
+      allowfullscreen />
+  </div>
 
-    <div class="mt-2 flex flex-col px-2 sm:items-center">
-      <h4
-        class="text-center text-2xl leading-9 font-extrabold tracking-tight
-        text-white sm:text-3xl sm:leading-10">
-        Don't miss it!
-      </h4>
-    </div>
-
-    <picture>
-      <source media="(max-width: 640px)" srcset="/AfricaDay_BannerMobile.jpg" />
-      <img class="mt-8" src="/AfricaDay_BannerLarge.jpg" alt="Africa Day" />
-    </picture>
-  {:else}
-    <div class="mt-4 flex items-center justify-center p-4">
-      <iframe
-        title="Africa Day"
-        width="1024"
-        height="576"
-        src="https://www.youtube-nocookie.com/embed/Mic-XQtG3_U"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope;
-        picture-in-picture"
-        allowfullscreen />
-    </div>
-  {/if}
-
-  {#if displayPreEvent}
-    <h4
-      class="mt-8 text-center text-2xl leading-9 font-extrabold tracking-tight
-      text-white sm:text-3xl sm:leading-10">
-      Watch the pre-event
-    </h4>
-
-    <div class="mt-4 flex items-center justify-center p-4">
-      <iframe
-        title="Africa Day Pre-event"
-        importance="low"
-        loading="lazy"
-        width="1024"
-        height="576"
-        src="https://www.youtube-nocookie.com/embed/8FP4y2mGess"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope;
-        picture-in-picture"
-        allowfullscreen />
-    </div>
-  {/if}
+  <span class="mt-8 mx-auto flex justify-center rounded-md shadow-sm">
+    <a
+      href="https://au.int/aucovid19responsefund"
+      class="gold-btn inline-flex items-center px-6 py-3 border
+      border-transparent text-2xl tracking-tight leading-6 font-semibold
+      rounded-md text-white hover:text-white active:text-white
+      focus:outline-none transition ease-in-out focus:text-white duration-150"
+      target="_blank"
+      rel="noopener noreferrer"
+      onclick="getOutboundLink('https://au.int/aucovid19responsefund'); return
+      false;">
+      Support Us
+    </a>
+  </span>
 
   <div class="mt-8 flex flex-col items-center">
     <div class="text-2xl tracking-tight font-bold text-center">
@@ -235,20 +207,27 @@
       </a>
     </div>
 
-    <span class="mt-8 inline-flex rounded-md shadow-sm">
-      <a
-        href="https://au.int/aucovid19responsefund"
-        class="gold-btn inline-flex items-center px-6 py-3 border
-        border-transparent text-2xl tracking-tight leading-6 font-semibold
-        rounded-md text-white hover:text-white active:text-white
-        focus:outline-none transition ease-in-out focus:text-white duration-150"
-        target="_blank"
-        rel="noopener noreferrer"
-        onclick="getOutboundLink('https://au.int/aucovid19responsefund'); return
-        false;">
-        Support Us
-      </a>
-    </span>
+    {#if displayPreEvent}
+      <h4
+        class="mt-12 text-center text-2xl leading-9 font-extrabold tracking-tight
+        text-white sm:text-3xl sm:leading-10">
+        Watch the pre-event
+      </h4>
+
+      <div class="mt-4 flex items-center justify-center p-4">
+        <iframe
+          title="Africa Day Pre-event"
+          importance="low"
+          loading="lazy"
+          width="1024"
+          height="576"
+          src="https://www.youtube-nocookie.com/embed/8FP4y2mGess"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope;
+          picture-in-picture"
+          allowfullscreen />
+      </div>
+    {/if}
 
     <section class="py-8 overflow-hidden">
       <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
