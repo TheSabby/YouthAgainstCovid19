@@ -11,6 +11,11 @@
       rgba(224, 224, 224, 1) 100%
     );
   }
+
+  .flag {
+    bottom: -10px;
+    right: 0px;
+  }
 </style>
 
 <svelte:head>
@@ -134,10 +139,16 @@
     </h3>
     <div class="mt-8 grid grid-cols-1 gap-4 sm:gap-12 sm:grid-cols-3">
       <div class="flex flex-col items-center lg:flex-row">
-        <img
-          class="rounded-full w-20 h-20 object-cover object-center lg:mr-2"
-          src="/team/fatimah-192.jpg"
-          alt="Fatimah Usman" />
+        <div class="relative">
+          <img
+            class="rounded-full w-20 h-20 object-cover object-center lg:mr-2"
+            src="/team/fatimah-192.jpg"
+            alt="Fatimah Usman" />
+          <img
+            class="absolute w-10 h-10 flag"
+            src="/flags/nigeria.png"
+            alt="Nigerian flag" />
+        </div>
 
         <div class="flex flex-col items-center lg:items-start lg:mt-4">
           <p class="mt-4 mb-0 leading-3 text-lg">Fatimah Usman</p>
@@ -146,10 +157,16 @@
       </div>
 
       <div class="flex flex-col items-center lg:flex-row">
-        <img
-          class="rounded-full w-20 h-20 object-cover object-center lg:mr-2"
-          src="/team/trust-192.jpg"
-          alt="Trust Antony Chinyama" />
+        <div class="relative">
+          <img
+            class="rounded-full w-20 h-20 object-cover object-center lg:mr-2"
+            src="/team/trust-192.jpg"
+            alt="Trust Antony Chinyama" />
+          <img
+            class="absolute w-10 h-10 flag"
+            src="/flags/zimbabwe.png"
+            alt="Zimbabwe flag" />
+        </div>
 
         <div class="flex flex-col items-center lg:items-start lg:mt-4">
           <p class="mt-4 mb-0 leading-3 text-lg">Trust Antony Chinyama</p>
@@ -158,10 +175,16 @@
       </div>
 
       <div class="flex flex-col items-center lg:flex-row">
-        <img
-          class="rounded-full w-20 h-20 object-cover object-center lg:mr-2"
-          src="/team/emediong-192.jpg"
-          alt="Emediong Akpabio" />
+        <div class="relative">
+          <img
+            class="rounded-full w-20 h-20 object-cover object-center lg:mr-2"
+            src="/team/emediong-192.jpg"
+            alt="Emediong Akpabio" />
+          <img
+            class="absolute w-10 h-10 flag"
+            src="/flags/nigeria.png"
+            alt="Nigerian flag" />
+        </div>
 
         <div class="flex flex-col items-center lg:items-start lg:mt-4">
           <p class="mt-4 mb-0 leading-3 text-lg">Emediong Akpabio</p>
@@ -170,10 +193,16 @@
       </div>
 
       <div class="flex flex-col items-center lg:flex-row">
-        <img
-          class="rounded-full w-20 h-20 object-cover object-center lg:mr-2"
-          src="/team/kevin-192.jpg"
-          alt="Kevin Karuga" />
+        <div class="relative">
+          <img
+            class="rounded-full w-20 h-20 object-cover object-center lg:mr-2"
+            src="/team/kevin-192.jpg"
+            alt="Kevin Karuga" />
+          <img
+            class="absolute w-10 h-10 flag"
+            src="/flags/kenya.png"
+            alt="Kenyan flag" />
+        </div>
 
         <div class="flex flex-col items-center lg:items-start lg:mt-4">
           <p class="mt-4 mb-0 leading-3 text-lg">Kevin Karuga</p>
@@ -184,10 +213,16 @@
       </div>
 
       <div class="flex flex-col items-center lg:flex-row">
-        <img
-          class="rounded-full w-20 h-20 object-cover object-top lg:mr-2"
-          src="/team/ngale-192.jpg"
-          alt="Ngale Hubert" />
+        <div class="relative">
+          <img
+            class="rounded-full w-20 h-20 object-cover object-top lg:mr-2"
+            src="/team/ngale-192.jpg"
+            alt="Ngale Hubert" />
+          <img
+            class="absolute w-10 h-10 flag"
+            src="/flags/cameroon.png"
+            alt="Cameroonian flag" />
+        </div>
         <div class="flex flex-col items-center lg:items-start lg:mt-4">
           <p class="mt-4 mb-0 leading-3 text-lg">Ngale Hubert</p>
           <p class="font-thin text-gray-600 text-sm">Communications</p>
@@ -195,10 +230,16 @@
       </div>
 
       <div class="flex flex-col items-center lg:flex-row">
-        <img
-          class="rounded-full w-20 h-20 object-cover object-center lg:mr-2"
-          src="/team/musaab-192.jpg"
-          alt="Musaab Abdalla" />
+        <div class="relative">
+          <img
+            class="rounded-full w-20 h-20 object-cover object-center lg:mr-2"
+            src="/team/musaab-192.jpg"
+            alt="Musaab Abdalla" />
+          <img
+            class="absolute w-10 h-10 flag"
+            src="/flags/sudan.png"
+            alt="Sudanese flag" />
+        </div>
         <div class="flex flex-col items-center lg:items-start lg:mt-4">
           <p class="mt-4 mb-0 leading-3 text-lg">Musaab Abdalla</p>
           <p class="font-thin text-gray-600 text-sm">
