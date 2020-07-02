@@ -224,7 +224,7 @@
             alt="Cameroonian flag" />
         </div>
         <div class="flex flex-col items-center lg:items-start lg:mt-4">
-          <p class="mt-4 mb-0 leading-3 text-lg">Ngale Hubert</p>
+          <p class="mt-4 mb-0 leading-3 text-lg">Ngale H</p>
           <p class="font-thin text-gray-600 text-sm">Communications</p>
         </div>
       </div>
