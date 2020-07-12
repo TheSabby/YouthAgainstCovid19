@@ -29,7 +29,7 @@
         <div class="px-5 pt-4 flex items-center justify-between">
           <img
             class="h-6"
-            src="/logo-wide.png"
+            src="/logo/logo-wide.png"
             alt="NexusAfrik Logo" />
           <div class="-mr-2">
             <button

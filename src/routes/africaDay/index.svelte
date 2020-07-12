@@ -90,7 +90,7 @@
       md:justify-start md:space-x-10">
       <div>
         <a href="/">
-          <img class="h-16 mt-2" src="/logo-full-reverse.png" alt="NexusAfrik Logo" />
+          <img class="h-16 mt-2" src="/logo/logo-full-reverse.png" alt="NexusAfrik Logo" />
         </a>
       </div>
       <div class="-mr-2 -my-2 md:hidden">

@@ -52,7 +52,7 @@
                 <a href="/">
                   <img
                     class="h-16 mt-2"
-                    src="/logo-full.png"
+                    src="/logo/logo-full.png"
                     alt="NexusAfrik Logo" />
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
