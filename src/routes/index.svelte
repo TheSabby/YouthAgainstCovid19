@@ -49,11 +49,11 @@
             <div
               class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div class="flex items-center justify-between w-full md:w-auto">
-                <a
-                  href="/"
-                  class="text-2xl font-extrabold text-black tracking-tighter
-                  hover:text-black active:text-black">
-                  NexusAfrik
+                <a href="/">
+                  <img
+                    class="h-16 mt-2"
+                    src="/logo.png"
+                    alt="NexusAfrik Logo" />
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
                   <MobileMenu />

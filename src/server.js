@@ -1,5 +1,6 @@
 import Fastify from 'fastify';
 import * as sapper from "@sapper/server";
+import fs from 'fs';
 
 process.on("unhandledRejection", function(err) {
   console.error(err);
@@ -7,12 +8,21 @@ process.on("unhandledRejection", function(err) {
 });
 
 const start = async () => {
-  const fastify = Fastify({
+  const serverConf = {
     logger: {
       level: process.env.LOG_LEVEL || 'info'
     },
     disableRequestLogging: true
-  });
+  };
+
+  if(process.env.CHINGU_ENV !== 'production' && fs.existsSync('./server.key')) {
+    serverConf.https = {
+      key: fs.readFileSync('./server.key'),
+      cert: fs.readFileSync('./server.crt')
+    };
+  }
+
+  const fastify = Fastify(serverConf);
 
   fastify.register(import("fastify-env"), {
     dotenv: true,

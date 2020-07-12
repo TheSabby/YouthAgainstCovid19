@@ -27,11 +27,10 @@
     <div class="rounded-lg shadow-md">
       <div class="rounded-lg bg-white shadow-xs overflow-hidden">
         <div class="px-5 pt-4 flex items-center justify-between">
-          <div
-            class="text-2xl font-extrabold text-black tracking-tighter
-            hover:text-black">
-            NexusAfrik
-          </div>
+          <img
+            class="h-6"
+            src="/logo-wide.png"
+            alt="NexusAfrik Logo" />
           <div class="-mr-2">
             <button
               type="button"

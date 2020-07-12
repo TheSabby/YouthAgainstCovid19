@@ -89,12 +89,8 @@
       class="flex justify-between items-center px-4 py-6 sm:px-6
       md:justify-start md:space-x-10">
       <div>
-        <a
-          href="/"
-          class="text-base leading-6 font-medium text-gray-50
-          hover:text-gray-300 focus:outline-none focus:text-gray-900 transition
-          ease-in-out duration-150">
-          Home
+        <a href="/">
+          <img class="h-16 mt-2" src="/logo-reverse.png" alt="NexusAfrik Logo" />
         </a>
       </div>
       <div class="-mr-2 -my-2 md:hidden">
@@ -209,8 +205,8 @@
 
     {#if displayPreEvent}
       <h4
-        class="mt-12 text-center text-2xl leading-9 font-extrabold tracking-tight
-        text-white sm:text-3xl sm:leading-10">
+        class="mt-12 text-center text-2xl leading-9 font-extrabold
+        tracking-tight text-white sm:text-3xl sm:leading-10">
         Watch the pre-event
       </h4>
 
